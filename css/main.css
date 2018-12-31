@@ -26,9 +26,7 @@ section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -629,13 +627,36 @@ p {
 
 /* SERVICES PAGE */
 
+.services-menu-container {
+  margin-top: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-title {
+  width: 80%;
+  font-family: "Yellowtail", cursive;
+  font-weight: 100;
+  font-size: 1.5em;
+  color: #fc5c94;
+}
+
+.menu-text {
+  width: 75%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1em;
+}
+
 .hair-chart-container {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .hair-chart-image-container {
@@ -728,6 +749,11 @@ th {
   height: auto;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   margin-left: 2px;
+  transition: transform 0.2s;
+}
+
+.service-image:hover {
+  transform: scale(1.1);
 }
 
 .service-item {
@@ -900,6 +926,9 @@ th {
   }
   .about-me-text {
     width: 50%;
+  }
+  .menu-text {
+    width: 60%;
   }
   .specials-text {
     font-size: 4.5em;
