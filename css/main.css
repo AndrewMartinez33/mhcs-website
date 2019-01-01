@@ -26,7 +26,9 @@ section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -771,6 +773,88 @@ th {
 
 /* GALLERY PAGE */
 
+.gallery-text-container {
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-title {
+  font-family: "Yellowtail", cursive;
+  font-size: 4em;
+  color: #fc5c94;
+  font-weight: 100;
+  text-align: center;
+}
+
+.gallery-text {
+  font-family: "Times New Roman", Times, serif;
+  width: 85%;
+  font-size: 1.1em;
+}
+
+.gallery-text-author {
+  color: #68bff1;
+  font-style: italic;
+}
+
+/* IMAGE GRID */
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 5px;
+  margin-top: 50px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 5px;
+}
+
+/* IMAGE GRID MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+  #photos {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  #photos {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  #photos {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  #photos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
 /* CONTACT PAGE */
 
 .form-container {
@@ -875,8 +959,6 @@ th {
 
 /* CONTENT MEDIA QUERIES */
 
-/* Small devices (landscape phones, 576px and up) */
-
 @media (min-width: 375px) {
   .service-image {
     width: 50px;
@@ -888,6 +970,8 @@ th {
     width: 110px;
   }
 }
+
+/* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
   .specials-image {
@@ -938,6 +1022,10 @@ th {
   .form {
     width: 70%;
   }
+  .gallery-text {
+    width: 75%;
+    font-size: 1.2em;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -982,6 +1070,10 @@ th {
   .form {
     width: 50%;
   }
+  .gallery-text {
+    width: 60%;
+    font-size: 1.3em;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1015,6 +1107,12 @@ th {
   }
   .chart-text {
     font-size: 1.25em;
+  }
+  .gallery-text {
+    width: 50%;
+  }
+  .gallery-title {
+    font-size: 5em;
   }
 }
 
