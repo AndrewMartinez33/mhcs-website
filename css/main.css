@@ -773,6 +773,104 @@ th {
 
 /* CONTACT PAGE */
 
+.form-container {
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  padding: 20px;
+  width: 85%;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.form-inputs input {
+  border: none;
+  background-color: #f8f8f8;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.form-inputs input:focus {
+  outline: none;
+}
+
+.form-inputs textarea {
+  border: none;
+  background-color: #f8f8f8;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.form-inputs textarea:focus {
+  outline: none;
+}
+
+.form-inputs label {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.form-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  color: lightgray;
+  line-height: 100%;
+}
+
+.form-subtitle {
+  font-family: "Yellowtail", cursive;
+  font-size: 3.75em;
+  padding: 0;
+  margin: 0;
+  line-height: 110%;
+  color: #f94181;
+}
+
+.form-second-subtitle {
+  color: #4ab9fa;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.form-button {
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #fc5c94 !important;
+  color: white;
+}
+
+.form-say-hi {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: lightgray solid 1px;
+}
+
+.form-directions {
+  color: #4ab9fa;
+  font-weight: bold;
+}
+
+.form-address {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: #868686;
+  font-size: 0.9em;
+}
+
 /* SPECIALS PAGE */
 
 /* CONTENT MEDIA QUERIES */
@@ -837,6 +935,9 @@ th {
   .chart-text {
     font-size: 1.25em;
   }
+  .form {
+    width: 70%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -877,6 +978,9 @@ th {
   }
   .chart-text {
     font-size: 1.25em;
+  }
+  .form {
+    width: 50%;
   }
 }
 

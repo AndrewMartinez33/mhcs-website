@@ -120,7 +120,61 @@
         <div><a class="logo-text" href="../">My Hair Color Specialist</a></div>
       </div>
     </header>
-    <main class="Site-content"></main>
+    <main class="Site-content">
+      <div class="form-container">
+        <div class="form shadow">
+          <h1 class="form-title">Contact Us</h1>
+          <h2 class="form-subtitle">Need Help?</h2>
+          <h2 class="form-subtitle form-second-subtitle">Drop Us a Note</h2>
+          <p class="form-address">11205 Washington Blvd. Suite 104</p>
+          <p class="form-address">Whittier, CA 90606</p>
+          <p class="form-address">(562) 842-6122</p>
+          <p class="form-address form-say-hi">
+            Or drop by and say hi!
+            <a
+              class="form-directions"
+              href="https://www.google.com/maps/place/11205+Washington+Blvd+%23104,+Whittier,+CA+90606/@33.9729326,-118.0718449,17z/data=!4m13!1m7!3m6!1s0x80c2d2315996a445:0xf3a9743d44ec6e48!2s11205+Washington+Blvd+%23104,+Whittier,+CA+90606!3b1!8m2!3d33.9729177!4d-118.0716123!3m4!1s0x80c2d2315996a445:0xf3a9743d44ec6e48!8m2!3d33.9729177!4d-118.0716123"
+            >
+              Get directions.</a
+            >
+          </p>
+          <form class="form-inputs" action="action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+            ></textarea>
+
+            <input class="form-button shadow" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </main>
     <div class="specials-container">
       <img
         class="specials-image"
