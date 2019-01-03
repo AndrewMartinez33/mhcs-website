@@ -26,9 +26,7 @@ section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -956,6 +954,115 @@ th {
 }
 
 /* SPECIALS PAGE */
+
+.specials-header-container {
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.specials-header-text {
+  font-family: "Yellowtail", cursive;
+  font-weight: 100;
+  line-height: 100%;
+}
+
+.specials-header-title {
+  font-size: 4em;
+  color: #4ab9fa;
+}
+
+.specials-header-subtitle {
+  font-size: 1.75em;
+  color: #f94181;
+}
+
+.header-from {
+  font-size: 1.25em;
+  color: black;
+}
+
+.offers-container {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-container {
+  width: 250px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer-image {
+  position: absolute;
+  top: 20px;
+  width: 80%;
+}
+
+.offer-title {
+  position: absolute;
+  bottom: 52px;
+  width: 90%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 100%;
+  text-align: center;
+  color: #4ab9fa;
+}
+
+.offer-details {
+  position: absolute;
+  bottom: 8px;
+  color: #868686;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.8em;
+  line-height: 101%;
+  width: 90%;
+}
+
+.offer-details p {
+  margin-bottom: 0;
+}
+
+.offer-date-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 60%;
+  background-color: #fc5c94;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.offer-year {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  line-height: 100%;
+  color: white;
+}
+
+.offer-date {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.9em;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
 
 /* CONTENT MEDIA QUERIES */
 
