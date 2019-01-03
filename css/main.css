@@ -1,3 +1,7 @@
+:root {
+  --text-font: "Noto Sans", sans-serif;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -26,7 +30,9 @@ section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -83,7 +89,7 @@ p {
 .button-link {
   padding: 8px;
   background-color: #2eb1ff;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   font-size: 1.2em;
   color: white;
   border-radius: 3px;
@@ -175,7 +181,7 @@ p {
 
 .review-text {
   width: 250px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   padding-right: 20px;
   margin-top: 25px;
 }
@@ -236,7 +242,7 @@ p {
 .specials-quote {
   font-size: 3em;
   line-height: 70%;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: var(--text-font);
 }
 
 .specials-link {
@@ -310,12 +316,27 @@ p {
 }
 
 .about-me-text {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   width: 80%;
 }
 
 .products-container {
   margin-top: 70px;
+}
+
+.products-i-use-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-i-use {
+  width: 70px;
+  height: 70px;
+  margin: 15px;
 }
 
 /* NAVBAR */
@@ -516,7 +537,7 @@ p {
 
 .footer-info-container {
   color: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   text-align: center;
 }
 
@@ -548,8 +569,6 @@ p {
 }
 
 .test h2 {
-  /* font-family: 'Playfair Display SC', serif; */
-  /* font-family: "Volkhov", serif; */
   font-family: "Yellowtail", cursive;
   color: #2eb1ff;
   font-size: 4em;
@@ -559,7 +578,7 @@ p {
 .footer-text {
   color: #f94181;
   /* color: white; */
-  font-family: "Volkhov", serif;
+  font-family: var(--text-font);
   font-size: 1.25em;
 }
 
@@ -646,7 +665,7 @@ p {
 
 .menu-text {
   width: 75%;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   font-size: 1.1em;
 }
 
@@ -681,7 +700,7 @@ p {
 }
 
 .chart-text {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   color: white;
   text-align: right;
   border-bottom: #f94181 dashed 1px;
@@ -757,14 +776,14 @@ th {
 }
 
 .service-item {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: var(--text-font);
   color: #222527;
   width: 160px;
   text-align: center;
 }
 
 .service-price {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   width: 110px;
   text-align: center;
 }
@@ -788,7 +807,7 @@ th {
 }
 
 .gallery-text {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   width: 85%;
   font-size: 1.1em;
 }
@@ -898,12 +917,12 @@ th {
 }
 
 .form-inputs label {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   font-weight: bold;
 }
 
 .form-title {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   font-size: 1.5em;
   padding: 0;
   margin: 0;
@@ -948,7 +967,7 @@ th {
 
 .form-address {
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   color: #868686;
   font-size: 0.9em;
 }
@@ -1012,10 +1031,10 @@ th {
 
 .offer-title {
   position: absolute;
-  bottom: 52px;
+  bottom: 67px;
   width: 90%;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.2em;
+  font-family: var(--text-font);
+  font-size: 1.1em;
   font-weight: bold;
   line-height: 100%;
   text-align: center;
@@ -1026,7 +1045,7 @@ th {
   position: absolute;
   bottom: 8px;
   color: #868686;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   font-size: 0.8em;
   line-height: 101%;
   width: 90%;
@@ -1044,10 +1063,11 @@ th {
   background-color: #fc5c94;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  padding: 5px;
 }
 
 .offer-year {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   font-size: 2em;
   font-weight: bold;
   text-align: center;
@@ -1057,7 +1077,7 @@ th {
 }
 
 .offer-date {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--text-font);
   font-size: 0.9em;
   color: white;
   text-align: center;
@@ -1239,9 +1259,9 @@ th {
   .menu-text {
     width: 60%;
   }
-  .specials-text {
+  /* .specials-text {
     font-size: 4.5em;
-  }
+  } */
   .service-item {
     width: 400px;
     padding: 0 20px;
