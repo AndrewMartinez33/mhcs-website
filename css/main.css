@@ -1016,7 +1016,7 @@ th {
 }
 
 .offer-container {
-  width: 250px;
+  width: 275px;
   height: 400px;
   position: relative;
   display: flex;
@@ -1027,12 +1027,12 @@ th {
 .offer-image {
   position: absolute;
   top: 20px;
-  width: 80%;
+  width: 70%;
 }
 
 .offer-title {
   position: absolute;
-  bottom: 67px;
+  bottom: 70px;
   width: 90%;
   font-family: var(--text-font);
   font-size: 1.1em;
