@@ -13,7 +13,7 @@ function gallery(photosArray) {
 
 }
 
-fetch('https://www.admin.drewskidev.com/api/collections/get/GalleryMyHCS?token=b209786fa3fcc9a01b23f6e341845c')
+fetch('https://www.admin.drewskidev.com/api/collections/get/GalleryMyHCS?token=60f989d9826aab5d738a7ebac190a4')
   .then(res => res.json())
   .then(res => gallery(res.entries[0].GalleryMyHCS));
 
