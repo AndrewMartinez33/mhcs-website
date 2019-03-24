@@ -16,6 +16,7 @@ function laziness() {
         distances.left >= 0 &&
         distances.left < (window.innerWidth || document.documentElement.clientWidth)) {
         element.setAttribute('src', imagePath);
+        element.classList.remove('lazy');
       }
     }
   })
