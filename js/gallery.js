@@ -15,7 +15,7 @@ function gallery(photosArray) {
 
 fetch('https://www.admin.drewskidev.com/api/collections/get/GalleryMyHCS?token=b209786fa3fcc9a01b23f6e341845c')
   .then(res => res.json())
-  .then(res => gallery(res.entries[0].MyHCSGallery));
+  .then(res => gallery(res.entries[0].GalleryMyHCS));
 
 
 
