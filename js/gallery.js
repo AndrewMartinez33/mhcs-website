@@ -16,8 +16,3 @@ function gallery(photosArray) {
 fetch('https://www.admin.drewskidev.com/api/collections/get/GalleryMyHCS?token=60f989d9826aab5d738a7ebac190a4')
   .then(res => res.json())
   .then(res => gallery(res.entries[0].GalleryMyHCS));
-
-
-
-
-/* <img class="lazy" src="../images/favicons/ms-icon-150x150.png" data-src="../images/gallery-images/gallery-image-1.jpg" alt="Woman with brunnette hair and an up-do hairstyle" /> */
