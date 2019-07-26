@@ -95,6 +95,10 @@ p {
 }
 
 /* HOME PAGE */
+#top-banner {
+  line-height: .95;
+  font-size: 1rem;
+}
 
 /* TOP IMAGE */
 
@@ -344,7 +348,7 @@ p {
 .top-container {
   position: fixed;
   width: 100%;
-  height: 50px;
+  height: 55px;
   z-index: 1;
   text-align: center;
   color: white;
@@ -354,6 +358,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0
 }
 
 .top-container a {
@@ -991,6 +996,7 @@ th {
 .specials-header-title {
   font-size: 4em;
   color: #4ab9fa;
+  text-align: center;
 }
 
 .specials-header-subtitle {
@@ -1003,10 +1009,43 @@ th {
   color: black;
 }
 
-.offers-container {
+.olaplex-container {
   width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 35px 0 0 0;
+}
+
+.olaplex-container>p {
+  max-width: 900px;
+  font-size: 1.15rem;
+  text-overflow: ellipsis;
+  padding: 0 15px;
+  color: #2d3033;
+  font-family: var(--text-font);
+}
+
+.olaplex-img-container {
+  max-width: 900px;
+}
+
+#olaplex-img {
+  width: 100%;
+  height: auto;
+}
+
+.offers-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.offers-container {
+  margin: 25px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1025,28 +1064,29 @@ th {
 .offer-image {
   position: absolute;
   top: 20px;
-  width: 70%;
+  width: auto;
+  height: 60%;
 }
 
 .offer-title {
   position: absolute;
-  bottom: 70px;
+  bottom: 100px;
   width: 90%;
   font-family: var(--text-font);
   font-size: 1.1em;
   font-weight: bold;
-  line-height: 100%;
+  line-height: 110%;
   text-align: center;
   color: #4ab9fa;
 }
 
 .offer-details {
   position: absolute;
-  bottom: 8px;
+  bottom: 30px;
   color: #868686;
   font-family: var(--text-font);
   font-size: 0.8em;
-  line-height: 101%;
+  line-height: 110%;
   width: 90%;
 }
 
@@ -1089,9 +1129,11 @@ th {
   .service-image {
     width: 50px;
   }
+
   .service-item {
     width: 190px;
   }
+
   .service-price {
     width: 110px;
   }
@@ -1104,20 +1146,35 @@ th {
     width: 250px;
     left: 35px;
   }
+
+  #top-banner {
+    font-size: 1.3rem;
+    line-height: .90;
+    padding: 0 15px;
+  }
+
+  .olaplex-container>p {
+    font-size: 1.25rem;
+  }
+
   .top-image {
     width: 60%;
   }
+
   .top-image-base {
     font-size: 3em;
     padding: 15px 50px;
   }
+
   .review-text {
     width: 300px;
     font-size: 1.15em;
   }
+
   .specials-text {
     font-size: 2.5em;
   }
+
   .services-header {
     font-family: "Yellowtail", cursive;
     font-size: 2.25em;
@@ -1126,28 +1183,36 @@ th {
     text-shadow: #2d3033 1px 1px 3px;
     font-weight: 100;
   }
+
   .service-image {
     width: 60px;
   }
+
   .service-item {
     width: 275px;
     padding: 0 20px;
   }
+
   .service-price {
     width: 150px;
   }
+
   .hair-chart-image-container {
     width: 65%;
   }
+
   .chart-title {
     font-size: 3em;
   }
+
   .chart-text {
     font-size: 1.25em;
   }
+
   .form {
     width: 70%;
   }
+
   .gallery-text {
     width: 75%;
     font-size: 1.2em;
@@ -1161,41 +1226,57 @@ th {
     width: 300px;
     left: 65px;
   }
+
+  .olaplex-container>p {
+    font-size: 1.45rem;
+  }
+
   .top-image {
     width: 50%;
   }
+
   .top-image-base {
     font-size: 4em;
     padding: 15px 50px;
   }
+
   .review-text {
     width: 600px;
   }
+
   .about-me-text {
     font-size: 1.15em;
   }
+
   .specials-text {
     font-size: 3em;
   }
+
   .service-item {
     width: 300px;
     padding: 0 20px;
   }
+
   .service-price {
     width: 200px;
   }
+
   .hair-chart-image-container {
     width: 50%;
   }
+
   .chart-title {
     font-size: 3em;
   }
+
   .chart-text {
     font-size: 1.25em;
   }
+
   .form {
     width: 50%;
   }
+
   .gallery-text {
     width: 60%;
     font-size: 1.3em;
@@ -1209,34 +1290,44 @@ th {
     width: 325px;
     left: 135px;
   }
+
   .top-image {
     width: 35%;
   }
+
   .about-me-text {
     width: 60%;
   }
+
   .specials-text {
     font-size: 4em;
   }
+
   .service-item {
     width: 350px;
     padding: 0 20px;
   }
+
   .service-price {
     width: 250px;
   }
+
   .hair-chart-image-container {
     width: 40%;
   }
+
   .chart-title {
     font-size: 3em;
   }
+
   .chart-text {
     font-size: 1.25em;
   }
+
   .gallery-text {
     width: 50%;
   }
+
   .gallery-title {
     font-size: 5em;
   }
@@ -1248,29 +1339,37 @@ th {
   .top-image {
     width: 24%;
   }
+
   .top-image-base {
     font-size: 5em;
     padding: 15px 50px;
   }
+
   .about-me-text {
     width: 50%;
   }
+
   .menu-text {
     width: 60%;
   }
+
   .service-item {
     width: 400px;
     padding: 0 20px;
   }
+
   .service-price {
     width: 300px;
   }
+
   .hair-chart-image-container {
     width: 30%;
   }
+
   .chart-title {
     font-size: 3em;
   }
+
   .chart-text {
     font-size: 1.25em;
   }
